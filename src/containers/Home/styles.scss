@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru|Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../../assets/vector-flower-seamless-pattern-background-elegant-texture-for-backgrounds-classical-luxury-old-fashioned-floral-ornament-seamless-texture-for-wallpapers-textile-wrapping_1217-615.jpg');
+    background-repeat: repeat;
+}
+.app{
+    padding-top: 20px;
+    width: 500px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: white;
+}
+.header {
+    display: grid;
+    color: white;
+    font-size: 16px;
+    grid-template-columns: 1fr 1fr;
+    background-color: #b980b8;
+    grid-gap: 10px;
+    // height: 80px;
+    padding: 5px;
+    div{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+        margin-right: 20px;
+    }
+    i {
+        font-size: 30px;
+    }
+    .header-right{
+        display: flex;
+        justify-self: end;
+        flex-direction: row;
+        i {
+            margin: 15px;
+        };
+    }
+}
+.chat-container {
+    width: 97%;
+    background-color: #EDF8FE;
+    min-height: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top:10px;
+    // margin: 10px;
+   
+}
+.input-container {
+    width: 100%;
+    display: grid;
+    padding: 0 10px;
+    grid-template-columns: 1fr 70px;
+    i {
+        padding: 25px
+    } 
+}
+
+.text-input {
+    font-size: 16;
+    padding: 10;
+    outline: none;
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    border-bottom: 2px solid rgb(0, 132, 255);
+}

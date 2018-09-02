@@ -141,6 +141,15 @@ module.exports = merge(common, {
       },
     ],
   },
+  mode: 'production',
+  optimization: {
+    flagIncludedChunks: true,
+    occurrenceOrder: true,
+    usedExports: true,
+    sideEffects: true,
+    concatenateModules: true,
+    noEmitOnErrors: true,
+  },
   plugins: [
     new CleanWebpackPlugin(path.join(__dirname, 'dist')),
     // new FaviconsWebpackPlugin({
@@ -169,6 +178,9 @@ module.exports = merge(common, {
     new ExtractTextPlugin({
       filename: cssFilename,
     }),
+    
+    
+
     new webpack.DefinePlugin({
       'process.env': process.env.NODE_ENV === 'production' ? prodEnv : stagingEnv,
     }),

@@ -5,6 +5,10 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 module.exports = {
   entry: [path.join(__dirname, 'src/index.js')],
   optimization: {
+    removeAvailableModules: true,
+    mergeDuplicateChunks: true,
+    providedExports: true,
+    removeEmptyChunks: true,
     minimizer: [
       new UglifyJsPlugin({
         cache: true,

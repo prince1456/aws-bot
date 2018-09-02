@@ -45,10 +45,10 @@ module.exports = merge(common, {
           },
         },
       },
-      {
-        test: /\.svg$/,
-        use: ['svg-inline-loader'],
-      },
+      // {
+      //   test: /\.svg$/,
+      //   use: ['svg-inline-loader'],
+      // },
       {
         test: /\.(png|jpg)$/,
         use: [
